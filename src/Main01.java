@@ -9,8 +9,7 @@ public class Main01 {
   public static String inclineHoursWord(int hours) {
 
     switch (hours % 100) {
-      case 11:
-      case 12:
+      
       case 13:
       case 14:
         return "часов";
@@ -26,9 +25,13 @@ public class Main01 {
       case 4:
         return "часа";
       case 5:
+
       case 6:
       case 7:
       case 8:
+
+
+      
 
       default:
         return "часов";
