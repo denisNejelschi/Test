@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// метод который будет обЬединять массив цифр в одно цисло  
 public class Hello {
 
   public static void main(String[] args) {
