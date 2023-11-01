@@ -34,42 +34,13 @@ public class Main01 {
       default:
         return "часов";
     }
-        /*
-        // более оптимально, но менее понятно будет сделать так:
-        switch (hours % 10) {
-            case 1:
-                return "час";
-            case 2:
-            case 3:
-            case 4:
-                return "часа";
-            default:
-                return "часов";
-        }
-        // с версии Java16 можно делать так:
-        switch (hours % 10) {
-            case 1:
-                return "час";
-            case 2, 3, 4:
-                return "часа";
-            case 5, 6, 7, 8, 9, 0:
-                return "часов";
-        }
-        // через if else if мы бы написали вот так:
-        int remainder = hours % 10;
-        if (remainder == 1) {
-            return "час";
-        } else if (remainder == 2 || remainder == 3 || remainder == 4) {
-            return "часа";
-        } else if (remainder == 5 || remainder == 6 || remainder == 7 || remainder == 8 || remainder == 9 || remainder == 0) {
-            return "часов";
-        }
-         */
+
   }
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int hours = scanner.nextInt();
+    System.out.println("коммент для обучения ");
     System.out.println(hours + " " + inclineHoursWord(hours));
   }
 }
